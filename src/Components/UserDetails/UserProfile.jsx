@@ -26,7 +26,7 @@ const UserProfile = () => {
   React.useEffect(() => {
     const fetchInfo = async () => {
       try {
-        const response = await fetch("http://44.201.85.252/allusers");
+        const response = await fetch("http://18.234.167.23/allusers");
         const data = await response.json();
         if (Array.isArray(data)) {
           setAllUsers(data);
@@ -66,7 +66,7 @@ const UserProfile = () => {
     }));
 
     try {
-      const response = await fetch("http://44.201.85.252/updateOrderStatus", {
+      const response = await fetch("http://18.234.167.23/updateOrderStatus", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -110,7 +110,7 @@ const UserProfile = () => {
     if (!selectedOrder) return;
 
     try {
-      const response = await fetch("http://44.201.85.252/updateOrderStatus", {
+      const response = await fetch("http://18.234.167.23/updateOrderStatus", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

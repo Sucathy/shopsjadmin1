@@ -28,7 +28,7 @@ const LoginSignup = () => {
 
   const login = async () => {
     let dataObj;
-    await fetch("http://44.201.85.252/adminlogin", {
+    await fetch("http://18.234.167.23/adminlogin", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
@@ -51,7 +51,7 @@ const LoginSignup = () => {
 
   const signup = async () => {
     let dataObj;
-    await fetch("http://44.201.85.252/adminsignup", {
+    await fetch("http://18.234.167.23/adminsignup", {
       method: "POST",
       headers: {
         Accept: "application/form-data",
@@ -73,7 +73,7 @@ const LoginSignup = () => {
   };
 
   const requestOtp = async () => {
-    const response = await fetch("http://44.201.85.252/requestotp", {
+    const response = await fetch("http://18.234.167.23/requestotp", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -91,7 +91,7 @@ const LoginSignup = () => {
   };
 
   const resetPassword = async () => {
-    const response = await fetch("http://44.201.85.252/resetpassword", {
+    const response = await fetch("http://18.234.167.23/resetpassword", {
       method: "POST",
       headers: {
         Accept: "application/json",
