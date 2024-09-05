@@ -1,0 +1,56 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -50%; /* Initially hidden off-screen to the left */
+  width: 40%;
+  margin-top: 80px;
+  height: 100%;
+  background-color: #000000; /* Background color */
+  color: white;
+  transition: left 0.4s ease-in-out;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensure it is on top of other content */
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  top: 5px;
+  right: 1px;
+  position: absolute;
+  z-index: 1100; /* Ensure close button is on top of sidebar */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 4px;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.link-btn:hover {
+  text-decoration: underline;
+}
+
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar when sidebar is open */
+}

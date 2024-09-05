@@ -1,0 +1,69 @@
+.nav {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+  box-shadow: 0 1px 3px -2px rgb(228, 228, 228);
+  padding: 15px 70px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+.nav-logo img {
+  width: 100px;
+  height: 90px;
+}
+.nav-logo p {
+  color: #000000;
+  font-size: 28px;
+  font-weight: 600;
+}
+/* Drawer Menu Styles */
+.drawer-menu {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+  width: 250px; /* Set width of the drawer */
+  background-color: #f7f7f7; /* Background color of the drawer */
+  height: 100%; /* Full height */
+}
+
+.drawer-item {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.drawer-item.active {
+  background-color: #e0e0e0; /* Active item background color */
+}
+
+.drawer-item:hover {
+  background-color: #d0d0d0; /* Hover state */
+}
+
+.drawer-link {
+  text-decoration: none;
+  color: #333; /* Link color */
+  font-size: 16px;
+  display: block;
+}
+
+.drawer-link:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin-top: 5px;
+  border: none;
+  border-top: 2px solid #007bff; /* Blue line to indicate active item */
+  width: 100%;
+}
