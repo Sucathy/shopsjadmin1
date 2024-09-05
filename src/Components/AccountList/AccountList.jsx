@@ -52,7 +52,7 @@ const AccountList = () => {
   // Fetch user data from API
   const fetchInfo = async () => {
     try {
-      const res = await fetch("http://18.234.167.23/allusers");
+      const res = await fetch("http://3.86.217.225/allusers");
       const data = await res.json();
       if (Array.isArray(data)) {
         setAllUsers(
