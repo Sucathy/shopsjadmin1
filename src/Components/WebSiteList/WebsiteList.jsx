@@ -21,7 +21,7 @@ const WebsiteList = () => {
   useEffect(() => {
     const fetchInfo = async () => {
       try {
-        const response = await fetch("http://3.86.217.225/allwebproducts");
+        const response = await fetch("http://localhost:4000/allwebproducts");
         const data = await response.json();
         setAllWebProducts(data);
       } catch (error) {
@@ -32,7 +32,7 @@ const WebsiteList = () => {
   }, []);
 
   const removeProduct = async (id) => {
-    await fetch("http://3.86.217.225/removeproducts", {
+    await fetch("http://localhost:4000/removeproducts", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -41,7 +41,7 @@ const WebsiteList = () => {
       body: JSON.stringify({ id }),
     });
 
-    const response = await fetch("http://3.86.217.225/allwebproducts");
+    const response = await fetch("http://localhost:4000/allwebproducts");
     const data = await response.json();
     setAllWebProducts(data);
   };
